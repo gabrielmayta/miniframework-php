@@ -1,3 +1,6 @@
 <?php
 
-echo "Hello world!";
+require "config.php";
+require "helpers.php";
+
+FrontEndController($_GET['url']);
