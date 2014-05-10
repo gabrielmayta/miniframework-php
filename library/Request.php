@@ -101,12 +101,14 @@ class Request
         if (!file_exists($controllerFileName)) {
 
             header("Location: error");
+            exit();
             //exit("Controlador no existe!");
         }
 
         require $controllerFileName;
 
         $controller = new $controllerClassName();
+
         $response = call_user_func_array([$controller, $actionMethodName], $params);
 
         $this->executeResponse($response);
