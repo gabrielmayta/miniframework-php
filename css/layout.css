@@ -1,0 +1,133 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Oswald', sans-serif;
+}
+
+header {
+    position: fixed;
+    z-index: 999;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 60px;
+    background: #f49b6c;
+}
+
+header h2 {
+    clear: left;
+    float: left;
+    width: 100%;
+    margin-top: 13px;
+    font-size: 22px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+nav {
+    position: fixed;
+    z-index: 999;
+    top: 60px;
+    left: 0px;
+    width: 100%;
+    background: #d0d0d0;
+}
+
+nav ul {
+    clear: left;
+    float: left;
+    margin-left: 10px;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: block;
+    float: left;
+    width: 80px;
+    margin-right: 10px;
+    padding: 3px 0px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+footer {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    padding: 4px 0px;
+    background: #f49b6c;
+}
+
+footer p {
+    clear: left;
+    float: left;
+    width: 100%;
+    font-size: 10px;
+    text-align: center;
+    font-weight: 400;
+}
+
+section {
+    width: 800px;
+    margin: 0px auto;
+}
+
+section h4 {
+    clear: left;
+    float: left;
+    margin-top: 200px;
+    font-size: 80px;
+    line-height: 110px;
+}
+
+section h5 {
+    clear: left;
+    float: left;
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+section input[type="text"], section textarea {
+    clear: left;
+    float: left;
+    width: 400px;
+    height: 40px;
+    padding: 0px 4px;
+    font-size: 18px;
+    border: none;
+    border-top: 1px solid #303030;
+    border-left: 1px solid #303030;
+    border-right: 1px solid #303030;
+}
+
+section textarea {
+    padding: 4px;
+    height: 140px !important;
+    border-bottom: 1px solid #303030;
+    resize: none;
+}
+
+section input[type="submit"] {
+    clear: left;
+    float: left;
+    margin-top: 10px;
+    padding: 8px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.statusMessage {
+    clear: left;
+    float: left;
+    margin-top: 10px;
+}

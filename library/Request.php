@@ -99,7 +99,9 @@ class Request
         $params = $this->getParams();
 
         if (!file_exists($controllerFileName)) {
-            exit("Controlador no existe!");
+
+            header("Location: error");
+            //exit("Controlador no existe!");
         }
 
         require $controllerFileName;
