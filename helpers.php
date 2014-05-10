@@ -15,7 +15,7 @@ function FrontEndController($name)
     $file = "controllers/$name.php";
 
     if (file_exists($file))
-        require $file;
+        return require $file;
 
     else {
         header("HTTP/1.0 404 Page Not Found");
