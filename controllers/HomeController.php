@@ -4,6 +4,6 @@ class HomeController
 {
     public function IndexAction()
     {
-        exit("Sono Home");
+        return new View('home', ['title' => 'MejorandoPHP', 'language' => 'PHP']);
     }
 }
