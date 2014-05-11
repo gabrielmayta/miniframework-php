@@ -79,14 +79,11 @@ class Request
     {
         if ($response instanceof Response) {
             $response->execute();
-        }
-        elseif (is_string($response)) {
+        } elseif (is_string($response)) {
             exit($response);
-        }
-        elseif (is_array($response)) {
+        } elseif (is_array($response)) {
             echo json_encode($response);
-        }
-        else {
+        } else {
             exit("Invalid response");
         }
     }
@@ -109,7 +106,7 @@ class Request
 
         $controller = new $controllerClassName();
 
-        $response = call_user_func_array([$controller, $actionMethodName], $params);
+        $response = call_user_func_array(array($controller, $actionMethodName), $params);
 
         $this->executeResponse($response);
     }
