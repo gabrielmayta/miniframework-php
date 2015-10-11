@@ -1,4 +1,4 @@
-mejorando-php
+Miniframework Php
 =============
 
-Mini framework desarrollado en PHP
+Mini framework develop with PHP
